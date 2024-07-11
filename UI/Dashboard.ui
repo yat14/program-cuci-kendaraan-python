@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(245, 240, 225);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>70</y>
+      <width>451</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../Asset/potoonda.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>-60</y>
+      <width>231</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe Fluent Icons</family>
+      <pointsize>24</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(30, 61, 89);</string>
+    </property>
+    <property name="text">
+     <string>Dashboard</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>161</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe Fluent Icons</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(30, 61, 89);</string>
+    </property>
+    <property name="text">
+     <string>Cuci Kendaraan</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>180</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe Fluent Icons</family>
+      <pointsize>24</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 110, 64);</string>
+    </property>
+    <property name="text">
+     <string>Putra Batim</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="menuDashboard"/>
+    <addaction name="menuExit"/>
+   </widget>
+   <widget class="QMenu" name="menuData_Master">
+    <property name="title">
+     <string>Data Master</string>
+    </property>
+    <addaction name="menuKendaraan"/>
+    <addaction name="menuMerek"/>
+    <addaction name="menuTarif"/>
+    <addaction name="menuPemilik"/>
+    <addaction name="menuPetugas"/>
+   </widget>
+   <widget class="QMenu" name="menuData_Transaksi">
+    <property name="title">
+     <string>Data Transaksi</string>
+    </property>
+    <addaction name="menuTransaksi"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuData_Master"/>
+   <addaction name="menuData_Transaksi"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="menuDashboard">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Asset/home.png</normaloff>../Asset/home.png</iconset>
+   </property>
+   <property name="text">
+    <string>Dashboard</string>
+   </property>
+  </action>
+  <action name="menuExit">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Asset/button.png</normaloff>../Asset/button.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="menuKendaraan">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Asset/motorcycle_23753.png</normaloff>../Asset/motorcycle_23753.png</iconset>
+   </property>
+   <property name="text">
+    <string>Kendaraan</string>
+   </property>
+  </action>
+  <action name="menuMerek">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Asset/peminjaman.png</normaloff>../Asset/peminjaman.png</iconset>
+   </property>
+   <property name="text">
+    <string>Merek</string>
+   </property>
+  </action>
+  <action name="menuTarif">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Asset/duit.png</normaloff>../Asset/duit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Tarif</string>
+   </property>
+  </action>
+  <action name="menuPemilik">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Asset/person.png</normaloff>../Asset/person.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pemilik Kendaraan</string>
+   </property>
+  </action>
+  <action name="menuPetugas">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Asset/admin.png</normaloff>../Asset/admin.png</iconset>
+   </property>
+   <property name="text">
+    <string>Petugas</string>
+   </property>
+  </action>
+  <action name="menuTransaksi">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Asset/Laporan.png</normaloff>../Asset/Laporan.png</iconset>
+   </property>
+   <property name="text">
+    <string>Transaksi</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
